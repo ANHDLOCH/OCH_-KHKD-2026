@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OCH-KHKD 2026</title>
+<script>
+function checkPassword() {
+const password = document.getElementById("password").value;
+const correctPassword = "032026"; // 🔒 Thay đổi mật khẩu tại đây
+if (password === correctPassword) {
+document.getElementById("login").style.display = "none";
+document.getElementById("report").style.display = "block";
+} else {
+alert("Sai mật khẩu!");
+}
+}
+</script>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 50px">
+
+<div id="login">
+<h2>Vui lòng nhập mật khẩu để xem báo cáo</h2>
+<input type="password" id="password" placeholder="Mật khẩu" />
+<button onclick="checkPassword()">Truy cập</button>
+</div>
+
+<div id="report" style="display:none;">
+<h2>OCH-KHKD 2026</h2>
+<iframe width="100%" height="600px"
+src="https://app.powerbi.com/view?r=eyJrIjoiMjRlMDU3Y2ItMTdlZC00ZmE0LWE0YmItNGFjMGE0MWRjNWNjIiwidCI6IjE4MmVkZDhiLTQ5YjgtNGFmOC1iNWU0LWY5ZWRmMDhhZTk2NyIsImMiOjEwfQ%3D%3D"
+frameborder="0" allowFullScreen="true"></iframe>
+</div>
+
+</body>
+</html>
